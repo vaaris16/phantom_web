@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #000000;
+  --text-color: #ffffff;
+}
+
+#root {
+  min-height: 100vh;
+  background-color: var(--bg);
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("assets/fonts/Montserrat Font/static/Montserrat-Bold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("assets/fonts/Montserrat Font/static/Montserrat-Thin.ttf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("assets/fonts/Montserrat Font/static/Montserrat-Italic.ttf");
+  font-weight: 100;
+  font-style: italic;
+}
