@@ -3,7 +3,7 @@ import { NavLinks } from "../constants";
 export default function NavBar() {
   return (
     <header>
-      <nav className="flex flex-row py-4 justify-between px-28">
+      <nav className="flex flex-row py-4 items-center justify-between px-28">
         <h1 className="font-Montserrat font-bold text-2xl">PHANTOM</h1>
 
         <ul className="flex flex-row gap-6">
