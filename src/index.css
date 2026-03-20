@@ -38,3 +38,19 @@
   font-weight: 100;
   font-style: italic;
 }
+
+@keyframes textFadeIn {
+  from {
+    opacity: 0%;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 100%;
+    transform: translateY(0);
+  }
+}
+
+main {
+  animation: textFadeIn 2s ease-out forwards;
+}
