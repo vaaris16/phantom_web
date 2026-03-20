@@ -8,6 +8,7 @@ function App() {
     <main className="flex flex-col min-h-screen justify-center items-center">
       <NavBar></NavBar>
       <Hero></Hero>
+      <CarShowCase></CarShowCase>
     </main>
   );
 }
