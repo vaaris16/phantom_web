@@ -5,6 +5,9 @@
   --animate-fade-in-y: fadeInY 2s ease forwards;
   --animate-fade-in-x: fadeInX 2s ease forwards;
   --animate-fade-in-x-r: fadeInXR 2s ease forwards;
+  --cyan: #00ffff;
+  --neon-pink: #ff10f0;
+  --secondary-color: #757983;
 }
 
 @utility animate-reveal-y {

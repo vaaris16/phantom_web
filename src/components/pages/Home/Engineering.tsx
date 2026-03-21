@@ -1,4 +1,4 @@
-import { EngineeringExcellence } from "../constants";
+import { EngineeringExcellence } from "../../../constants";
 
 export default function Engineering() {
   return (

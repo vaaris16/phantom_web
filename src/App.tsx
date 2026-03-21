@@ -1,21 +1,17 @@
 import NavBar from "./components/NavBar";
-import Hero from "./components/Hero";
-import "./index.css";
-import CarShowCase from "./components/CarShowCase";
-import PhantomInfo from "./components/PhantomInfo";
-import Engineering from "./components/Engineering";
+import { Routes, Route } from "react-router-dom";
+import Home from "./components/pages/Home/Home";
+import STEMRacing from "./components/pages/STEM_Racing/STEMRacing";
 
 function App() {
   return (
-    <main className="flex flex-col min-h-screen justify-center items-center">
+    <>
       <NavBar></NavBar>
-      <Hero></Hero>
-      <div className="flex flex-col justify-center items-center gap-100">
-        <CarShowCase></CarShowCase>
-        <PhantomInfo></PhantomInfo>
-        <Engineering></Engineering>
-      </div>
-    </main>
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/stem_racing" element={<STEMRacing />}></Route>
+      </Routes>
+    </>
   );
 }
 
