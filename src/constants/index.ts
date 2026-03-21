@@ -5,3 +5,9 @@ export const NavLinks = [
   { label: "Sponsors" },
   { label: "Community" },
 ];
+
+export const EngineeringExcellence = [
+  { label: "Precision Bearings" },
+  { label: "Optimized Geometry" },
+  { label: "Dimensional Accuracy" },
+];

@@ -1,8 +1,6 @@
-import "../index.css";
-
 export default function Hero() {
   return (
-    <section className="flex flex-col min-h-screen items-center justify-center">
+    <section className="pt-64 flex flex-col min-h-screen items-center justify-center">
       <div className="-translate-y-32 gap-4 flex flex-col justify-center items-center">
         <div className="relative overflow-visible">
           <h1 className="relative font-Montserrat font-bold text-9xl">
@@ -10,7 +8,7 @@ export default function Hero() {
           </h1>
           <h1
             aria-hidden="true"
-            className="absolute inset-0 z-0 text-9xl text-bold font-Montserrat blur-2xl opacity-100 bg-linear-to-r from-[#00FFFF] to-pink-500 bg-clip-text text-transparent"
+            className="absolute inset-0 z-0 text-9xl text-bold font-Montserrat blur-2xl opacity-100 text-phantom"
           >
             PHANTOM
           </h1>
@@ -36,7 +34,7 @@ export default function Hero() {
           borderImage: "linear-gradient(to bottom left, #00FFFF, #FF10F0) 1",
         }}
         id="arrow"
-        className="w-10 h-10 translate-y-28 border-r-4 border-b-4 rotate-45 animate-pulse"
+        className="w-10 h-10 my-28 border-r-4 border-b-4 rotate-45 animate-pulse"
       ></div>
     </section>
   );

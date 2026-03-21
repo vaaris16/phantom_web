@@ -1,5 +1,20 @@
 @import "tailwindcss";
 
+@theme {
+  --phantom-gradient: linear-gradient(to right, #00ffff, #ff10f0);
+}
+
+@utility bg-phantom {
+  background-image: var(--phantom-gradient);
+}
+
+@utility text-phantom {
+  background-image: var(--phantom-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
 :root {
   --bg: #000000;
   --text-color: #ffffff;
