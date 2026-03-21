@@ -1,8 +1,6 @@
-import render_1 from "../assets/images/Rathus Render.png";
-
 export default function CarShowCase() {
   return (
-    <section className="flex flex-col justify-center items-center gap-20">
+    <section className="flex flex-col justify-center items-center animate-reveal-y gap-20">
       <div className="flex flex-col justify-center items-center gap-10">
         <div className="relative inline-block overflow-visible">
           <h1
@@ -23,11 +21,7 @@ export default function CarShowCase() {
       </div>
       <div className="relative inline-block overflow-visible">
         <div className="absolute w-250 h-150 rounded-4xl -z-1 inset-0 blur-xl bg-phantom opacity-70"></div>
-        <img
-          className="w-250 h-150 rounded-4xl"
-          src={render_1}
-          alt="Car Render"
-        />
+        <div className="w-250 h-150 bg-white rounded-4xl"></div>
       </div>
     </section>
   );

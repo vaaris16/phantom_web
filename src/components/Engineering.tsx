@@ -3,7 +3,7 @@ import { EngineeringExcellence } from "../constants";
 export default function Engineering() {
   return (
     <section className="flex flex-col justify-center items-center gap-20">
-      <div className="relative overflow-visible">
+      <div className="relative overflow-visible animate-reveal-y">
         <h1
           aria-hidden="true"
           className="absolute uppercase text-7xl font-Montserrat text-phantom opacity-100 blur-3xl font-bold"
@@ -17,7 +17,7 @@ export default function Engineering() {
 
       <div className="flex flex-row gap-10 pb-28 items-center justify-center">
         {EngineeringExcellence.map(({ label }) => (
-          <div className="relative group">
+          <div className="relative group animate-reveal-y">
             <div className="absolute bg-phantom opacity-0 blur-xl w-80 h-80 transition-all duration-500 group-hover:opacity-70 group-hover:-translate-y-3"></div>
             <div className="relative group-hover:-translate-y-3 transition-all duration-600 flex items-end justify-start bg-gray-600 rounded-3xl w-80 h-80">
               <h1 className="text-white text-lg font-bold font-Montserrat m-5">

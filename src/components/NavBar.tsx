@@ -2,7 +2,7 @@ import { NavLinks } from "../constants";
 
 export default function NavBar() {
   return (
-    <header className="sticky w-full h-auto">
+    <header className="sticky w-full h-auto animate-fade-in-y">
       <nav className="flex flex-row py-4 items-center justify-between px-28">
         <h1 className="font-Montserrat font-bold text-2xl">PHANTOM</h1>
 

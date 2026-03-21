@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="pt-64 flex flex-col min-h-screen items-center justify-center">
+    <section className="pt-64 flex flex-col min-h-screen items-center justify-center animate-fade-in-y">
       <div className="-translate-y-32 gap-4 flex flex-col justify-center items-center">
         <div className="relative overflow-visible">
           <h1 className="relative font-Montserrat font-bold text-9xl">
