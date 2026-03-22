@@ -37,7 +37,7 @@ export default function TeamInfo() {
 
               <div className="flex flex-col gap-5 px-6 pb-6">
                 <h1 className="text-lg font-Montserrat font-bold ">{name}</h1>
-                <h1 className="text-base text-[#a571e4] font-Montserrat font-medium">
+                <h1 className="text-base text-(--accents) font-Montserrat font-medium">
                   {role}
                 </h1>
                 <h1 className="text-base font-Montserrat font-thin">{skill}</h1>

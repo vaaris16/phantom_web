@@ -76,3 +76,55 @@ export const TeamData = [
     role: "Design Engineer",
   },
 ];
+
+export const SponsorsList = [
+  {
+    name: "Elevon",
+    description:
+      "Provides funding that enables high-quality materials, rapid prototyping, and advanced engineering development.",
+    website: "https://elevon.com",
+    level: "Gold Sponsor",
+  },
+  {
+    name: "KBE",
+    description:
+      "Supports precision engineering through resources for tools, software, and data-driven testing.",
+    website: "https://kbe.com",
+    level: "Gold Sponsor",
+  },
+  {
+    name: "Range Rover",
+    description:
+      "Backs premium engineering and performance-focused design aligned with professional standards.",
+    website: "https://www.landrover.com/range-rover",
+    level: "Gold Sponsor",
+  },
+  {
+    name: "Bhutani Infra",
+    description:
+      "Funds prototyping, manufacturing, and testing to enable iterative and optimized engineering solutions.",
+    website: "https://bhutaniinfra.com",
+    level: "Gold Sponsor",
+  },
+  {
+    name: "Bajaj Mechanicals",
+    description:
+      "Provides access to specialized mechanical components and tools for advanced prototyping.",
+    website: "https://bajajmechanicals.com",
+    level: "Gold Sponsor",
+  },
+  {
+    name: "IILM",
+    description:
+      "Supports project management, logistics, and operational execution across the season.",
+    website: "https://www.iilm.edu",
+    level: "Gold Sponsor",
+  },
+  {
+    name: "Gspann",
+    description:
+      "Enables creative experimentation, CAD refinement, and iterative performance optimization.",
+    website: "https://www.gspann.com",
+    level: "Silver Sponsor",
+  },
+];

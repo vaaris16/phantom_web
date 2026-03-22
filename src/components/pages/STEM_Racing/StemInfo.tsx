@@ -5,7 +5,7 @@ export default function STEMInfo() {
         <h1 className="absolute text-7xl text-white font-Montserrat font-bold uppercase">
           what is stem racing
         </h1>
-        <h1 className="relative text-7xl text-phantom blur-2xl opacity-100 text-white font-Montserrat font-bold uppercase">
+        <h1 className="relative text-7xl text-phantom blur-3xl opacity-100 text-white font-Montserrat font-bold uppercase">
           what is stem racing
         </h1>
       </div>
@@ -21,7 +21,7 @@ export default function STEMInfo() {
       </h1>
 
       <div className="relative">
-        <div className="absolute w-250 h-150 bg-phantom blur-2xl opacity-75 rounded-4xl mt-14"></div>
+        <div className="absolute w-250 h-150 bg-phantom blur-xl opacity-100 rounded-4xl mt-14"></div>
         <div className="relative w-250 h-150 bg-white rounded-4xl mt-14"></div>
       </div>
     </section>

@@ -8,13 +8,13 @@ export default function Hero() {
           </h1>
           <h1
             aria-hidden="true"
-            className="absolute inset-0 z-0 text-9xl text-bold font-Montserrat blur-2xl opacity-100 text-phantom"
+            className="absolute inset-0 z-0 text-9xl text-bold font-Montserrat blur-3xl opacity-100 text-phantom"
           >
             PHANTOM
           </h1>
         </div>
 
-        <h1 className="font-Montserrat italic text-2xl text-[#757983]">
+        <h1 className="font-Montserrat italic text-2xl text-(--secondary-color)">
           "Seen to Late, Gone to Great" - By Phantom
         </h1>
       </div>
@@ -31,7 +31,8 @@ export default function Hero() {
 
       <div
         style={{
-          borderImage: "linear-gradient(to bottom left, #00FFFF, #FF10F0) 1",
+          borderImage:
+            "linear-gradient(to bottom left, var(--cyan), var(--neon-pink)) 1",
         }}
         id="arrow"
         className="w-10 h-10 my-28 border-r-4 border-b-4 rotate-45 animate-pulse"

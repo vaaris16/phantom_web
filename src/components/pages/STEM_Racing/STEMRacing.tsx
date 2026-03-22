@@ -4,10 +4,10 @@ import FlashCards from "./FlashCards";
 
 export default function STEMRacing() {
   return (
-    <main className="flex flex-col gap-100 justify-center items-center">
+    <section className="flex flex-col gap-100 justify-center items-center">
       <STEMInfo></STEMInfo>
       <CompetitionInfo></CompetitionInfo>
       <FlashCards></FlashCards>
-    </main>
+    </section>
   );
 }

@@ -9,6 +9,7 @@
   --neon-pink: #ff10f0;
   --secondary-color: #757983;
   --cards-color: #0d0d0d;
+  --accents: #a571e4;
 }
 
 @utility animate-reveal-y {
@@ -69,7 +70,7 @@ body {
 
 @font-face {
   font-family: "Montserrat";
-  src: url("assets/fonts/Montserrat Font/static/Montserrat-Italic.ttf");
+  src: url("assets/fonts/Montserrat Font/static/Montserrat-MediumItalic.ttf");
   font-weight: 100;
   font-style: italic;
 }
@@ -77,7 +78,7 @@ body {
 @font-face {
   font-family: "Montserrat";
   src: url("assets/fonts/Montserrat Font/static/Montserrat-ThinItalic.ttf");
-  font-weight: 100;
+  font-weight: 200;
   font-style: italic;
 }
 
