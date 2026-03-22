@@ -10,6 +10,7 @@
   --secondary-color: #757983;
   --cards-color: #0d0d0d;
   --accents: #a571e4;
+  --text-field: #262626;
 }
 
 @utility animate-reveal-y {
