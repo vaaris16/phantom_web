@@ -5,7 +5,6 @@ export const NavLinks = [
   { label: "STEM Racing", href: "/stem_racing" },
   { label: "Team", href: "/team" },
   { label: "Sponsors", href: "/sponsors" },
-  { label: "Community", href: "/community" },
 ];
 
 export const EngineeringExcellence = [
