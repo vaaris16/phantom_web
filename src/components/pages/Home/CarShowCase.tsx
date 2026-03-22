@@ -21,7 +21,11 @@ export default function CarShowCase() {
       </div>
       <div className="relative inline-block overflow-visible">
         <div className="absolute w-250 h-150 rounded-4xl -z-1 inset-0 blur-xl bg-phantom opacity-70"></div>
-        <div className="w-250 h-150 bg-white rounded-4xl"></div>
+        <img
+          className="rounded-4xl"
+          src="/images/home/render.png"
+          alt="render car"
+        />
       </div>
     </section>
   );

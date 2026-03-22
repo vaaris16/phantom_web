@@ -8,9 +8,12 @@ export const NavLinks = [
 ];
 
 export const EngineeringExcellence = [
-  { label: "Precision Bearings" },
-  { label: "Optimized Geometry" },
-  { label: "Dimensional Accuracy" },
+  { label: "Precision Bearings", image: "/images/home/bearings.jpg" },
+  {
+    label: "Optimized Geometry",
+    image: "/images/home/rounded_corners.png",
+  },
+  { label: "Dimensional Accuracy", image: "/images/home/rounded_corners.png" },
 ];
 
 export const FlashCardsList = [
@@ -83,6 +86,7 @@ export const SponsorsList = [
       "Provides funding that enables high-quality materials, rapid prototyping, and advanced engineering development.",
     website: "https://elevon.com",
     level: "Gold Sponsor",
+    image: "/images/sponsors/elevon.jpeg",
   },
   {
     name: "KBE",
@@ -90,6 +94,7 @@ export const SponsorsList = [
       "Supports precision engineering through resources for tools, software, and data-driven testing.",
     website: "https://kbe.com",
     level: "Gold Sponsor",
+    image: "/images/sponsors/kbe.jpeg",
   },
   {
     name: "Range Rover",
@@ -97,6 +102,7 @@ export const SponsorsList = [
       "Backs premium engineering and performance-focused design aligned with professional standards.",
     website: "https://www.landrover.com/range-rover",
     level: "Gold Sponsor",
+    image: "/images/sponsors/range_rover.png",
   },
   {
     name: "Bhutani Infra",
@@ -104,6 +110,7 @@ export const SponsorsList = [
       "Funds prototyping, manufacturing, and testing to enable iterative and optimized engineering solutions.",
     website: "https://bhutaniinfra.com",
     level: "Gold Sponsor",
+    image: "/images/sponsors/bhutani_infra.png",
   },
   {
     name: "Bajaj Mechanicals",
@@ -111,6 +118,7 @@ export const SponsorsList = [
       "Provides access to specialized mechanical components and tools for advanced prototyping.",
     website: "https://bajajmechanicals.com",
     level: "Gold Sponsor",
+    image: "/images/sponsors/Image Background Remover.png",
   },
   {
     name: "IILM",
@@ -118,6 +126,7 @@ export const SponsorsList = [
       "Supports project management, logistics, and operational execution across the season.",
     website: "https://www.iilm.edu",
     level: "Gold Sponsor",
+    image: "/images/sponsors/iilm.jpeg",
   },
   {
     name: "Gspann",
@@ -125,5 +134,6 @@ export const SponsorsList = [
       "Enables creative experimentation, CAD refinement, and iterative performance optimization.",
     website: "https://www.gspann.com",
     level: "Silver Sponsor",
+    image: "/images/sponsors/gspann.jpeg",
   },
 ];

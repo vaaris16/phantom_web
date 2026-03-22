@@ -4,10 +4,12 @@ import Home from "./components/pages/Home/Home";
 import STEMRacing from "./components/pages/STEM_Racing/STEMRacing";
 import Team from "./components/pages/Team/Team";
 import Sponsors from "./components/pages/Sponsors/Sponsors";
+import Scroll from "./components/Scroll";
 
 function App() {
   return (
     <>
+      <Scroll></Scroll>
       <NavBar></NavBar>
       <Routes>
         <Route path="/" element={<Home />}></Route>

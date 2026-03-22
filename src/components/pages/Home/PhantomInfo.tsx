@@ -35,7 +35,11 @@ export default function PhantomInfo() {
       <div className="relative inline-block">
         <div className="absolute -z-1 w-125 h-80 bg-phantom blur-xl opacity-100"></div>
 
-        <div className="relative w-125 h-80 rounded-2xl bg-red-50 "></div>
+        <img
+          className="w-125 h-80 rounded-4xl"
+          src="/images/home/phantom_logo.png"
+          alt="Phantom Logo"
+        />
       </div>
     </section>
   );

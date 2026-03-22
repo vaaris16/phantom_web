@@ -23,7 +23,11 @@ export default function CompetitionInfo() {
 
       <div className="relative animate-reveal-x">
         <div className="absolute bg-phantom blur-xl opacity-100 rounded-4xl w-125 h-80 bg-white"></div>
-        <div className="relative w-125 h-80 bg-white rounded-4xl"></div>
+        <img
+          className="relative w-125 h-80 rounded-4xl"
+          src="/images/stem_racing/stem_racing logo.jpg"
+          alt="stem racing logo"
+        />
       </div>
     </section>
   );

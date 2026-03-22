@@ -1,4 +1,8 @@
+import { useNavigate } from "react-router-dom";
+
 export default function Hero() {
+  const navigate = useNavigate();
+
   return (
     <section className="pt-64 flex flex-col min-h-screen items-center justify-center animate-fade-in-y">
       <div className="-translate-y-32 gap-4 flex flex-col justify-center items-center">
@@ -20,11 +24,17 @@ export default function Hero() {
       </div>
 
       <div className="-translate-y-24 flex flex-row gap-10 justify-center items-center">
-        <button className="w-56 h-16 hover:scale-105 transition-transform duration-300 bg-white text-lg text-black font-Montserrat font-medium rounded-full">
-          Join our Community
+        <button
+          onClick={() => navigate("/stem_racing")}
+          className="w-56 h-16 hover:scale-105 transition-transform duration-300 bg-white text-lg text-black font-Montserrat font-medium rounded-full"
+        >
+          Stem Racing
         </button>
 
-        <button className="w-48 h-16 hover:scale-105 transition-transform duration-300 bg-black border-x border-y text-lg text-white font-Montserrat font-medium rounded-full">
+        <button
+          onClick={() => navigate("/team")}
+          className="w-48 h-16 hover:scale-105 transition-transform duration-300 bg-black border-x border-y text-lg text-white font-Montserrat font-medium rounded-full"
+        >
           Learn More
         </button>
       </div>

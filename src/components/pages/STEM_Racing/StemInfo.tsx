@@ -20,9 +20,13 @@ export default function STEMInfo() {
         while fostering innovation, teamwork, and real-world engineering skills.
       </h1>
 
-      <div className="relative">
-        <div className="absolute w-250 h-150 bg-phantom blur-xl opacity-100 rounded-4xl mt-14"></div>
-        <div className="relative w-250 h-150 bg-white rounded-4xl mt-14"></div>
+      <div className="relative mt-14">
+        <div className="absolute w-250 h-150 bg-phantom blur-xl opacity-100 rounded-4xl"></div>
+        <img
+          className="relative inset-0 w-250 h-150 rounded-4xl"
+          src="/images/stem_racing/stem_racing.webp"
+          alt="stem racing image"
+        />
       </div>
     </section>
   );

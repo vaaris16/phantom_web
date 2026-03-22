@@ -14,14 +14,18 @@ export default function SponsorsInfo() {
       </p>
 
       <div className="grid grid-cols-2 mt-20 gap-6">
-        {SponsorsList.map(({ name, description, website, level }) => (
+        {SponsorsList.map(({ name, description, website, image, level }) => (
           <div className="relative group">
             <div
               aria-hidden="true"
               className="absolute w-150 h-50 rounded-4xl blur-xl opacity-0 bg-phantom transition-all duration-500 group-hover:opacity-100 group-hover:-translate-y-3"
             ></div>
             <div className="relative w-150 h-50 bg-(--cards-color) py-6 px-6 flex flex-row transition-all duration-500 group-hover:opacity-100 group-hover:-translate-y-3 items-center rounded-4xl">
-              <div className="w-20 h-20 p-6 rounded-2xl bg-white"></div>
+              <img
+                className="w-30 h-30 p-6 rounded-2xl"
+                src={image}
+                alt={image}
+              />
               <div className="px-8 flex flex-col">
                 <h1 className="text-xl pt-3 font-Montserrat font-bold">
                   {name}
