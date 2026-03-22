@@ -8,6 +8,7 @@
   --cyan: #00ffff;
   --neon-pink: #ff10f0;
   --secondary-color: #757983;
+  --cards-color: #0d0d0d;
 }
 
 @utility animate-reveal-y {

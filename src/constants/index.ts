@@ -40,3 +40,39 @@ export const FlashCardsList = [
       "STEM Racing delivers real engineering experience through design, build, testing, and competition.",
   },
 ];
+
+export const TeamData = [
+  {
+    name: "Vaaris Chitkara",
+    skill:
+      "Coordinating team workflows and managing design progress efficiently",
+    role: "Team Manager and Design Engineer",
+  },
+  {
+    name: "Rivaan Ravi Gupta",
+    skill:
+      "Manufacturing precise components with focus on accuracy and quality",
+    role: "Manufacturing Engineer, Graphic Designer, and Resource Manager",
+  },
+  {
+    name: "Aarya Goyal",
+    skill:
+      "Clear and professional communication within the team and externally",
+    role: "Graphic Designer and Resource Manager",
+  },
+  {
+    name: "Rishaan Dhingra",
+    skill: "Managing sponsor communication and resource coordination",
+    role: "Sponsorship Manager and Resource Manager",
+  },
+  {
+    name: "Samar Pratap Choudry",
+    skill: "Developing consistent visual branding and design layouts",
+    role: "Graphic Designer",
+  },
+  {
+    name: "Niara Bahl",
+    skill: "Optimizing CAD models for performance and efficiency",
+    role: "Design Engineer",
+  },
+];

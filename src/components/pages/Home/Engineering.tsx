@@ -19,7 +19,7 @@ export default function Engineering() {
         {EngineeringExcellence.map(({ label }) => (
           <div className="relative group animate-reveal-y">
             <div className="absolute bg-phantom opacity-0 blur-xl w-80 h-80 transition-all duration-500 group-hover:opacity-70 group-hover:-translate-y-3"></div>
-            <div className="relative group-hover:-translate-y-3 transition-all duration-600 flex items-end justify-start bg-gray-600 rounded-3xl w-80 h-80">
+            <div className="relative group-hover:-translate-y-3 transition-all duration-500 flex items-end justify-start bg-gray-600 rounded-3xl w-80 h-80">
               <h1 className="text-white text-lg font-bold font-Montserrat m-5">
                 {label}
               </h1>
