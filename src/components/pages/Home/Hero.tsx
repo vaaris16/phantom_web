@@ -7,33 +7,33 @@ export default function Hero() {
     <section className="pt-64 flex flex-col min-h-screen items-center justify-center animate-fade-in-y">
       <div className="-translate-y-32 gap-4 flex flex-col justify-center items-center">
         <div className="relative overflow-visible">
-          <h1 className="relative font-Montserrat font-bold text-9xl">
+          <h1 className="relative font-Montserrat font-bold md:text-9xl text-6xl">
             PHANTOM
           </h1>
           <h1
             aria-hidden="true"
-            className="absolute inset-0 z-0 text-9xl text-bold font-Montserrat blur-3xl opacity-100 text-phantom"
+            className="absolute inset-0 z-0 md:text-9xl text-6xl text-bold font-Montserrat blur-xl opacity-100 text-phantom"
           >
             PHANTOM
           </h1>
         </div>
 
-        <h1 className="font-Montserrat italic text-2xl text-(--secondary-color)">
+        <h1 className="font-Montserrat italic text-lg text-(--secondary-color)">
           "Seen to Late, Gone to Great" - By Phantom
         </h1>
       </div>
 
-      <div className="-translate-y-24 flex flex-row gap-10 justify-center items-center">
+      <div className="-translate-y-24 flex flex-row gap-5 justify-center items-center">
         <button
           onClick={() => navigate("/stem_racing")}
-          className="w-56 h-16 hover:scale-105 transition-transform duration-300 bg-white text-lg text-black font-Montserrat font-medium rounded-full"
+          className="w-40 h-14 md:w-56 md:h-16 hover:scale-105 transition-transform duration-300 bg-white text-lg text-black font-Montserrat font-medium rounded-full"
         >
           Stem Racing
         </button>
 
         <button
           onClick={() => navigate("/team")}
-          className="w-48 h-16 hover:scale-105 transition-transform duration-300 bg-black border-x border-y text-lg text-white font-Montserrat font-medium rounded-full"
+          className="w-40 h-14 md:w-48 md:h-16 hover:scale-105 transition-transform duration-300 bg-black border-x border-y text-lg text-white font-Montserrat font-medium rounded-full"
         >
           Learn More
         </button>

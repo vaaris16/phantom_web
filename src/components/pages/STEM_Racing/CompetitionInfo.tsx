@@ -1,17 +1,17 @@
 export default function CompetitionInfo() {
   return (
-    <section className="flex flex-row gap-30 justify-center items-center">
+    <section className="flex flex-col md:flex-row gap-30 justify-center items-center">
       <div className="flex gap-6 flex-col justify-center animate-reveal-x">
         <div className="relative">
-          <h1 className="absolute text-7xl blur-3xl opacity-100 font-Montserrat font-bold text-phantom">
+          <h1 className="absolute text-6xl blur-2xl opacity-100 font-Montserrat font-bold text-phantom">
             Competition
           </h1>
-          <h1 className="relative text-7xl font-Montserrat font-bold text-phantom">
+          <h1 className="relative text-6xl ml-3 font-Montserrat font-bold text-phantom">
             Competition
           </h1>
         </div>
 
-        <h1 className="text-xl max-w-125 font-Montserrat font-medium text-(--secondary-color)">
+        <h1 className="text-lg ml-3 max-w-125 font-Montserrat font-medium text-(--secondary-color)">
           STEM Racing competitions challenge student teams to design, build, and
           race formula-style vehicles. Teams compete in events testing
           acceleration, endurance, efficiency, and design innovation. It's not
@@ -22,9 +22,9 @@ export default function CompetitionInfo() {
       </div>
 
       <div className="relative animate-reveal-x">
-        <div className="absolute bg-phantom blur-xl opacity-100 rounded-4xl w-125 h-80 bg-white"></div>
+        <div className="absolute bg-phantom blur-xl opacity-100 rounded-4xl w-75 h-65 md:w-125 md:h-80 bg-white"></div>
         <img
-          className="relative w-125 h-80 rounded-4xl"
+          className="relative w-75 h-65 md:w-125 md:h-80 rounded-4xl"
           src="/images/stem_racing/stem_racing logo.jpg"
           alt="stem racing logo"
         />

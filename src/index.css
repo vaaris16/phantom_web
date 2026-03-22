@@ -16,14 +16,14 @@
   opacity: 0;
   animation: var(--animate-fade-in-y);
   animation-timeline: view();
-  animation-range: entry 20% 60%;
+  animation-range: entry 20% 20%;
 }
 
 @utility animate-reveal-x {
   opacity: 0;
   animation: var(--animate-fade-in-x);
   animation-timeline: view();
-  animation-range: entry 20% 60%;
+  animation-range: entry 20% 20%;
 }
 
 @utility bg-phantom {

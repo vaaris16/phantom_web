@@ -6,16 +6,16 @@ export default function Engineering() {
       <div className="relative overflow-visible animate-reveal-y">
         <h1
           aria-hidden="true"
-          className="absolute uppercase text-7xl font-Montserrat text-phantom opacity-100 blur-3xl font-bold"
+          className="absolute uppercase text-2xl md:text-7xl font-Montserrat text-phantom opacity-100 blur-2xl font-bold"
         >
           Engineering Excellence
         </h1>
-        <h1 className="relative uppercase text-7xl font-Montserrat text-phantom font-bold">
+        <h1 className="relative uppercase text-2xl md:text-7xl font-Montserrat text-phantom font-bold">
           Engineering Excellence
         </h1>
       </div>
 
-      <div className="flex flex-row gap-10 pb-28 items-center justify-center">
+      <div className="flex flex-col md:flex-row gap-10 pb-28 items-center justify-center">
         {EngineeringExcellence.map(({ label, image }) => (
           <div className="relative group animate-reveal-y">
             <div className="absolute bg-phantom opacity-0 blur-xl w-80 h-80 transition-all duration-500 group-hover:opacity-70 group-hover:-translate-y-3"></div>
@@ -25,7 +25,7 @@ export default function Engineering() {
                 alt={image}
                 className="absolute rounded-4xl inset-0 w-full h-full object-cover"
               />
-              <h1 className="text-white text-lg font-bold font-Montserrat m-5">
+              <h1 className="z-10 text-(--secondary-color) text-lg font-bold font-Montserrat m-5">
                 {label}
               </h1>
             </div>
