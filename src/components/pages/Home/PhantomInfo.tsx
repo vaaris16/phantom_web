@@ -1,6 +1,6 @@
 export default function PhantomInfo() {
   return (
-    <section className="flex flex-row gap-25 justify-center items-center animate-reveal-x">
+    <section className="flex flex-row gap-25 justify-center items-center animate-reveal-y">
       <div className="flex flex-col gap-6">
         <div className="relative">
           <h1

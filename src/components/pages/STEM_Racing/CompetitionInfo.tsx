@@ -1,7 +1,7 @@
 export default function CompetitionInfo() {
   return (
     <section className="flex flex-row gap-30 justify-center items-center">
-      <div className="flex gap-6 flex-col justify-center animate-reveal-x">
+      <div className="flex gap-6 flex-col justify-center animate-reveal-y">
         <div className="relative">
           <h1 className="absolute text-7xl blur-3xl opacity-100 font-Montserrat font-bold text-phantom">
             Competition

@@ -3,7 +3,7 @@ import { SponsorsList } from "../../../constants";
 
 export default function SponsorsInfo() {
   return (
-    <section className="pt-24 flex flex-col justify-center items-center">
+    <section className="pt-24 flex flex-col justify-center items-center animate-fade-in-y">
       <h1 className="font-Montserrat font-bold text-7xl ">Meet our Sponsors</h1>
 
       <p className="pt-5 text-center font-Montserrat font-medium text-(--secondary-color)">
@@ -13,7 +13,7 @@ export default function SponsorsInfo() {
         forward.
       </p>
 
-      <div className="grid grid-cols-2 mt-20 gap-6">
+      <div className="grid grid-cols-2 mt-20 gap-6 animate-reveal-y">
         {SponsorsList.map(({ name, description, website, level }) => (
           <div className="relative group">
             <div
