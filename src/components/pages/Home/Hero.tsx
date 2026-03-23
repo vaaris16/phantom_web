@@ -18,7 +18,7 @@ export default function Hero() {
           </h1>
         </div>
 
-        <h1 className="font-Montserrat italic text-lg text-(--secondary-color)">
+        <h1 className="font-Montserrat italic md:text-2xl text-lg text-(--secondary-color)">
           "Seen to Late, Gone to Great" - By Phantom
         </h1>
       </div>

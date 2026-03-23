@@ -29,13 +29,13 @@ export default function TeamInfo() {
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 animate-reveal-y">
-        {TeamData.map(({ name, skill, role, image }) => (
+        {TeamData.map(({ name, skill, role }) => (
           <div className="relative group">
             <div className="absolute w-75 h-130 md:w-100 md:h-160 rounded-4xl bg-phantom blur-sm md:blur-xl opacity-100 md:opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:-translate-y-3" />
             <div className="relative w-75 h-130 md:w-100 md:h-160 rounded-4xl bg-(--cards-color) flex flex-col gap-5 transition-all duration-500 group-hover:-translate-y-3">
               <img
-                src={image}
-                alt={image}
+                src=""
+                alt=""
                 className="w-full h-2/3 rounded-t-4xl bg-gray-400"
               />
 
