@@ -4,7 +4,7 @@ import FlashCards from "./FlashCards";
 
 export default function STEMRacing() {
   return (
-    <section className="flex flex-col gap-75 justify-center items-center">
+    <section className="flex flex-col gap-60 justify-center items-center">
       <STEMInfo></STEMInfo>
       <CompetitionInfo></CompetitionInfo>
       <FlashCards></FlashCards>

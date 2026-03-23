@@ -8,12 +8,22 @@ export const NavLinks = [
 ];
 
 export const EngineeringExcellence = [
-  { label: "Precision Bearings", image: "/images/home/bearings.jpg" },
   {
-    label: "Optimized Geometry",
-    image: "/images/home/rounded_corners.png",
+    label: "Twitter",
+    image: "/images/home/twitter_x_logo.png",
+    website: "https://x.com/Phantom1411162",
   },
-  { label: "Dimensional Accuracy", image: "/images/home/rounded_corners.png" },
+  {
+    label: "Instagram",
+    image: "/images/home/insta_logo.png",
+    website:
+      " https://www.instagram.com/999phantom.racing?igsh=MXJhM2diOGhhcWQ3NA%3D%3D&utm_source=qr",
+  },
+  {
+    label: "YouTube",
+    image: "/images/home/yt_logo.png",
+    website: "https://www.youtube.com/@Phantom-n1p",
+  },
 ];
 
 export const FlashCardsList = [
@@ -49,33 +59,39 @@ export const TeamData = [
     skill:
       "Coordinating team workflows and managing design progress efficiently",
     role: "Team Manager and Design Engineer",
+    image: "/images/Team/vaaris.jpeg",
   },
   {
     name: "Rivaan Ravi Gupta",
     skill:
       "Manufacturing precise components with focus on accuracy and quality",
     role: "Manufacturing Engineer, Graphic Designer, and Resource Manager",
+    image: "/images/Team/rivaan.jpeg",
   },
   {
     name: "Aarya Goyal",
     skill:
       "Clear and professional communication within the team and externally",
     role: "Graphic Designer and Resource Manager",
+    image: "/images/Team/aarya.jpeg",
   },
   {
     name: "Rishaan Dhingra",
     skill: "Managing sponsor communication and resource coordination",
     role: "Sponsorship Manager and Resource Manager",
+    image: "/images/Team/rishaan.jpeg",
   },
   {
     name: "Samar Pratap Choudry",
     skill: "Developing consistent visual branding and design layouts",
     role: "Graphic Designer",
+    image: "/images/Team/samar.jpeg",
   },
   {
     name: "Niara Bahl",
     skill: "Optimizing CAD models for performance and efficiency",
     role: "Design Engineer",
+    image: "/images/Team/niara.jpeg",
   },
 ];
 
@@ -84,7 +100,7 @@ export const SponsorsList = [
     name: "Elevon",
     description:
       "Provides funding that enables high-quality materials, rapid prototyping, and advanced engineering development.",
-    website: "https://elevon.com",
+    website: "https://elevon.services/",
     level: "Gold Sponsor",
     image: "/images/sponsors/elevon.jpeg",
   },
@@ -92,7 +108,7 @@ export const SponsorsList = [
     name: "KBE",
     description:
       "Supports precision engineering through resources for tools, software, and data-driven testing.",
-    website: "https://kbe.com",
+    website: "https://kbe.co.in/",
     level: "Gold Sponsor",
     image: "/images/sponsors/kbe.jpeg",
   },
@@ -100,7 +116,8 @@ export const SponsorsList = [
     name: "Range Rover",
     description:
       "Backs premium engineering and performance-focused design aligned with professional standards.",
-    website: "https://www.landrover.com/range-rover",
+    website:
+      "https://www.google.com/aclk?sa=L&ai=DChsSEwjQ06aH7rWTAxV2qWYCHRg0OlAYACICCAEQABoCc20&co=1&ase=2&gclid=CjwKCAjwyYPOBhBxEiwAgpT8P5PPXZiGtbxGJmt_NH9gR6Xwav4g9Ipx1-tMrvr-seuTSjLXepeSjRoCUMsQAvD_BwE&cid=CAAS0gHkaHGWArIhzaQSGTPLts0i5c91_QwWBLcHcxJ7GS8SIJJQ3XvHSmNHaeXBIw9x6B5eSdUnsMNaJAT9J6IPHnr9J-SILahe_MOKu5ZZ6Tm6XaCeYNrcAnzP0DTS-aNOMsRZSLhBoaZWHTtdyyIjpxQZGpRMseLdw3Tk4Fvo-rVBpQbJEZYJabyEwTYvPZ6vLSSg6_PXWD3bhAxQwjme-Ae2dWGvGPDZbBsVPDfcRyQFyt67iSafS-nWKRXgrMI1o3WfXuouQ6i0z0FaaF3vsnbTb-A&cce=2&category=acrcp_v1_37&sig=AOD64_1W3SSd6ruqL50VljjjbIe-xkutIA&q&nis=4&adurl&ved=2ahUKEwjuvKCH7rWTAxUxR2wGHemXErAQ0Qx6BAgWEAQ",
     level: "Gold Sponsor",
     image: "/images/sponsors/range_rover.png",
   },
@@ -108,7 +125,7 @@ export const SponsorsList = [
     name: "Bhutani Infra",
     description:
       "Funds prototyping, manufacturing, and testing to enable iterative and optimized engineering solutions.",
-    website: "https://bhutaniinfra.com",
+    website: "https://www.bhutanigroup.com/",
     level: "Gold Sponsor",
     image: "/images/sponsors/bhutani_infra.png",
   },
@@ -116,7 +133,8 @@ export const SponsorsList = [
     name: "Bajaj Mechanicals",
     description:
       "Provides access to specialized mechanical components and tools for advanced prototyping.",
-    website: "https://bajajmechanicals.com",
+    website:
+      "https://www.zaubacorp.com/BAJAJ-MECHANICALS-INDIA-PRIVATE-LIMITED-U74899DL1983PTC015287",
     level: "Gold Sponsor",
     image: "/images/sponsors/Image Background Remover.png",
   },
@@ -124,7 +142,7 @@ export const SponsorsList = [
     name: "IILM",
     description:
       "Supports project management, logistics, and operational execution across the season.",
-    website: "https://www.iilm.edu",
+    website: "https://iilm.edu/",
     level: "Gold Sponsor",
     image: "/images/sponsors/iilm.jpeg",
   },
@@ -132,7 +150,7 @@ export const SponsorsList = [
     name: "Gspann",
     description:
       "Enables creative experimentation, CAD refinement, and iterative performance optimization.",
-    website: "https://www.gspann.com",
+    website: "https://www.gspann.com/",
     level: "Silver Sponsor",
     image: "/images/sponsors/gspann.jpeg",
   },
