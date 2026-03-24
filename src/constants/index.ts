@@ -128,3 +128,46 @@ export const SponsorsList = [
     level: "Silver Sponsor",
   },
 ];
+
+export const CommunityBenefitData = [
+  {
+    title: "Weekly Race Updates",
+    content:
+      "Stay informed about our latest competition results and performance metrics.",
+  },
+  {
+    title: "Behind-the-Scenes Content",
+    content:
+      "Exclusive photos and videos from our workshop and testing sessions.",
+  },
+  {
+    title: "Technical Insights",
+    content:
+      "Deep dives into our engineering decisions and innovation process.",
+  },
+  {
+    title: "Event Invitations",
+    content:
+      "Be the first to know about public showcases, workshops, and team events.",
+  },
+  {
+    title: "Career Opportunities",
+    content:
+      "Early access to internships and job opportunities from our sponsor network.",
+  },
+];
+
+export const TextFieldsData = [
+  {
+    placeholder: "Enter your email",
+    label: "Email",
+    id: "email",
+    type: "email",
+  },
+  {
+    placeholder: "Enter your name",
+    label: "Name",
+    id: "name",
+    type: "text",
+  },
+];
