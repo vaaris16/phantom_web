@@ -66,7 +66,7 @@ export const TeamData = [
     skill:
       "Manufacturing precise components with focus on accuracy and quality",
     role: "Manufacturing Engineer, Graphic Designer, and Resource Manager",
-    image: "/images/Team/rivaan.jpeg",
+    image: "/images/Team/rivaan.pdf",
   },
   {
     name: "Aarya Goyal",
