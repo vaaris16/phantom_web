@@ -54,7 +54,6 @@ html,
 body {
   background-color: var(--bg);
   color: var(--text-color);
-  cursor: none;
 }
 
 html,
