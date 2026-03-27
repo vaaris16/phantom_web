@@ -31,8 +31,8 @@ export default function TeamInfo() {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 animate-reveal-y">
         {TeamData.map(({ name, skill, role, image }) => (
           <div className="relative group">
-            <div className="absolute w-75 h-130 md:w-100 md:h-160 rounded-4xl bg-phantom blur-sm md:blur-xl opacity-100 md:opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:-translate-y-3" />
-            <div className="relative w-75 h-130 md:w-100 md:h-160 rounded-4xl bg-(--cards-color) flex flex-col gap-5 transition-all duration-500 group-hover:-translate-y-3">
+            <div className="absolute w-85 h-150 md:w-100 md:h-160 rounded-4xl bg-phantom blur-sm md:blur-xl opacity-100 md:opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:-translate-y-3" />
+            <div className="relative w-85 h-150 md:w-100 md:h-160 rounded-4xl bg-(--cards-color) flex flex-col gap-5 transition-all duration-500 group-hover:-translate-y-3">
               <img
                 src={image}
                 alt={image}

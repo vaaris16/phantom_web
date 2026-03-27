@@ -5,13 +5,13 @@ export default function SponsorsInfo() {
   return (
     <section className="pt-24 flex flex-col justify-center items-center">
       <div className="relative">
-        <h1 className="absolute font-Montserrat font-bold text-7xl ml-3 md:ml-0">
-          Meet our Sponsors
-        </h1>
         <h1
           aria-hidden="true"
-          className="relative text-phantom md:blur-3xl opacity-100 ml-3 md:ml-0 font-Montserrat font-bold text-7xl "
+          className="absolute text-phantom md:blur-3xl opacity-100 ml-3 md:ml-0 font-Montserrat font-bold text-7xl "
         >
+          Meet our Sponsors
+        </h1>
+        <h1 className="relative font-Montserrat font-bold text-7xl ml-3 md:ml-0">
           Meet our Sponsors
         </h1>
       </div>
