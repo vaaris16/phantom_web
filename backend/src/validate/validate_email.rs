@@ -40,6 +40,14 @@ pub fn validate_email(email: &str) -> Result<(), AppErrors> {
         return Err(AppErrors::InvalidEmail);
     }
 
+    if local_part.len() > 64 {
+        return Err(AppErrors::InvalidEmail);
+    }
+
+    if email.len() > 254 {
+        return Err(AppErrors::InvalidEmail);
+    }
+
     Ok(())
 }
 
