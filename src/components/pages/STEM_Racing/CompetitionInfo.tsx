@@ -25,6 +25,7 @@ export default function CompetitionInfo() {
         <div className="absolute bg-phantom blur-xl opacity-100 rounded-4xl w-75 h-65 md:w-125 md:h-80 bg-white"></div>
         <img
           className="relative w-75 h-65 md:w-125 md:h-80 rounded-4xl"
+          loading="lazy"
           src="/images/stem_racing/stem_racing logo.jpg"
           alt="stem racing logo"
         />

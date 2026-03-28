@@ -24,6 +24,7 @@ export default function STEMInfo() {
         <div className="absolute w-75 h-65 md:w-250 md:h-150 bg-phantom blur-xl opacity-100 rounded-4xl"></div>
         <img
           className="relative inset-0 w-75 h-65 md:w-250 md:h-150 rounded-4xl"
+          loading="lazy"
           src="/images/stem_racing/stem_racing.webp"
           alt="stem racing image"
         />

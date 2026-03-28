@@ -25,6 +25,7 @@ export default function SocialMedia() {
                 src={image}
                 alt={image}
                 className="absolute rounded-4xl inset-0 w-full h-full object-cover"
+                loading="lazy"
               />
               <h1 className="z-10 text-white text-lg font-bold font-Montserrat m-5">
                 {label}

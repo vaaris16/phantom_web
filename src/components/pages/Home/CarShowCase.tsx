@@ -25,6 +25,7 @@ export default function CarShowCase() {
         <div className="relative flex flex-col justify-center items-center w-75 h-65 md:w-250 md:h-150 rounded-4xl -z-1 inset-0 bg-black">
           <img
             className="rounded-4xl w-75 h-65 md:h-150 md:w-250"
+            loading="lazy"
             src="/images/home/car_showcase.png"
             alt="car_showcase"
           />

@@ -34,6 +34,7 @@ export default function SponsorsInfo() {
               <img
                 className="w-40 h-40 md:w-30 md:h-30 p-6 rounded-2xl"
                 src={image}
+                loading="lazy"
                 alt={image}
               />
               <div className=" md:px-8 flex flex-col">

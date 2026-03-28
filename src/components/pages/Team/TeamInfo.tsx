@@ -35,6 +35,7 @@ export default function TeamInfo() {
             <div className="relative w-85 h-150 md:w-100 md:h-160 rounded-4xl bg-(--cards-color) flex flex-col gap-5 transition-all duration-500 group-hover:-translate-y-3">
               <img
                 src={image}
+                loading="lazy"
                 alt={image}
                 className="w-full h-2/3 rounded-t-4xl bg-gray-400"
               />

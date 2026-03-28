@@ -36,6 +36,7 @@ export default function PhantomInfo() {
         <div className="absolute -z-1 w-75 h-65 md:w-125 md:h-80 bg-phantom blur-xl opacity-100"></div>
         <img
           className="w-75 h-65 md:w-125 md:h-80 rounded-4xl"
+          loading="lazy"
           src="/images/home/phantom_logo.png"
           alt="Phantom Logo"
         />
