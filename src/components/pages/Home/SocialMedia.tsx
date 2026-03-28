@@ -1,4 +1,4 @@
-import { EngineeringExcellence } from "../../../constants";
+import { SocialMediaList } from "../../../constants";
 
 export default function SocialMedia() {
   return (
@@ -15,8 +15,8 @@ export default function SocialMedia() {
         </h1>
       </div>
 
-      <div className="flex flex-col md:flex-row gap-10 pb-28 items-center justify-center">
-        {EngineeringExcellence.map(({ label, image, website }) => (
+      <div className="flex flex-col md:flex-row gap-20 md:gap-10 pb-28 items-center justify-center">
+        {SocialMediaList.map(({ label, image, website }) => (
           <a href={website} className="relative group animate-reveal-y">
             <div className="absolute bg-phantom opacity-100 md:opacity-0 blur-lg md:blur-xl w-80 h-80 transition-all duration-500 group-hover:opacity-70 group-hover:-translate-y-3"></div>
 

@@ -2,7 +2,7 @@ import { TeamData } from "../../../constants";
 
 export default function TeamInfo() {
   return (
-    <section className="flex flex-col gap-10 justify-center items-center">
+    <section className="flex flex-col gap-7 justify-center items-center">
       <div className="relative animate-fade-in-y">
         <h1
           className="absolute uppercase md:ml-0 ml-3 font-Montserrat font-bold md:text-8xl text-6xl"
@@ -12,7 +12,7 @@ export default function TeamInfo() {
         </h1>
         <h1
           aria-hidden="true"
-          className="relative md:ml-0 ml-3 uppercase md:text-8xl font-Montserrat text-phantom blur-3xl opacity-100 font-bold text-6xl"
+          className="relative md:ml-0 ml-3 uppercase md:text-8xl font-Montserrat text-phantom md:blur-3xl blur-xl opacity-100 font-bold text-6xl"
           style={{ paddingTop: "5rem" }}
         >
           meet the team

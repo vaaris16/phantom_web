@@ -7,7 +7,7 @@ export const NavLinks = [
   { label: "Sponsors", href: "/sponsors" },
 ];
 
-export const EngineeringExcellence = [
+export const SocialMediaList = [
   {
     label: "Twitter",
     image: "/images/home/twitter_x_logo.png",
@@ -136,7 +136,7 @@ export const SponsorsList = [
     website:
       "https://www.zaubacorp.com/BAJAJ-MECHANICALS-INDIA-PRIVATE-LIMITED-U74899DL1983PTC015287",
     level: "Gold Sponsor",
-    image: "/images/sponsors/Image Background Remover.png",
+    image: "/images/sponsors/bajaj.png",
   },
   {
     name: "IILM",

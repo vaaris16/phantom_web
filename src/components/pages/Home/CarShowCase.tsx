@@ -20,24 +20,15 @@ export default function CarShowCase() {
         </h1>
       </div>
 
-      <div className="hidden md:inline-block relative overflow-visible">
-        <div className="absolute w-250 h-150 rounded-4xl -z-1 inset-0 blur-xl bg-phantom opacity-70"></div>
-        <div className="relative flex flex-col justify-center items-center w-250 h-150 rounded-4xl -z-1 inset-0 bg-black">
+      <div className="inline-block relative overflow-visible">
+        <div className="absolute w-75 h-65 md:w-250 md:h-150 rounded-4xl -z-1 inset-0 blur-xl bg-phantom opacity-70"></div>
+        <div className="relative flex flex-col justify-center items-center w-75 h-65 md:w-250 md:h-150 rounded-4xl -z-1 inset-0 bg-black">
           <img
-            className="rounded-4xl"
+            className="rounded-4xl w-75 h-65 md:h-150 md:w-250"
             src="/images/home/car_showcase.png"
             alt="car_showcase"
           />
         </div>
-      </div>
-
-      <div className="md:hidden inline-block relative overflow-visible">
-        <div className="absolute w-75 h-65 rounded-4xl -z-1 inset-0 blur-xl bg-phantom opacity-70"></div>
-        <img
-          className="relatie rounded-4xl w-75 h-65"
-          src="/images/home/car_showcase.png"
-          alt="mobile car render"
-        />
       </div>
     </section>
   );
