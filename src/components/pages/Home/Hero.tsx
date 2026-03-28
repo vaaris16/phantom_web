@@ -19,7 +19,7 @@ export default function Hero() {
         </div>
 
         <h1 className="font-Montserrat italic md:text-2xl text-lg text-(--secondary-color)">
-          "Gone too great, seen too late" - By Phantom
+          "Seen to Late , Gone too Great " - By Phantom
         </h1>
       </div>
 
