@@ -11,6 +11,8 @@ pub enum AppErrors {
     EmptyName,
     InvalidEmail,
     InvalidName,
+
+    ServerError,
 }
 
 #[derive(Serialize)]
@@ -25,6 +27,7 @@ impl IntoResponse for AppErrors {
             AppErrors::EmptyName => (StatusCode::BAD_REQUEST, "Name is empty"),
             AppErrors::InvalidEmail => (StatusCode::BAD_REQUEST, "Email is not valid"),
             AppErrors::InvalidName => (StatusCode::BAD_REQUEST, "Name is not valid"),
+            AppErrors::ServerError => (StatusCode::INTERNAL_SERVER_ERROR, "Server error"),
         };
 
         let body = Json(ErrorResponse {
