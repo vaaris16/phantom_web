@@ -17,7 +17,7 @@ export const SocialMediaList = [
     label: "Instagram",
     image: "/images/home/insta_logo.png",
     website:
-      " https://www.instagram.com/999phantom.racing?igsh=MXJhM2diOGhhcWQ3NA%3D%3D&utm_source=qr",
+      "https://www.instagram.com/999phantom.racing?igsh=MXJhM2diOGhhcWQ3NA%3D%3D&utm_source=qr",
   },
   {
     label: "YouTube",
@@ -31,7 +31,7 @@ export const FlashCardsList = [
     logo: Component,
     title: "Design & Engineering",
     content:
-      "Students design and engineer every componwent of a formula-style car, balancing performance, aerodynamics, and precision.",
+      "Students design and engineer every component of a formula-style car, balancing performance, aerodynamics, and precision.",
   },
   {
     logo: Factory,
