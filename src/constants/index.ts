@@ -82,7 +82,7 @@ export const TeamData = [
     image: "/images/Team/rishaan.jpeg",
   },
   {
-    name: "Samar Pratap Choudry",
+    name: "Samar Pratap Choudhary",
     skill: "Developing consistent visual branding and design layouts",
     role: "Graphic Designer",
     image: "/images/Team/samar.jpeg",
