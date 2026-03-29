@@ -56,41 +56,40 @@ export const FlashCardsList = [
 export const TeamData = [
   {
     name: "Vaaris Chitkara",
-    skill:
-      "Coordinating team workflows and managing design progress efficiently",
+    skill: "Managing team coordination, planning, and overall design execution",
     role: "Team Manager and Design Engineer",
     image: "/images/Team/vaaris.jpeg",
   },
   {
     name: "Rivaan Ravi Gupta",
     skill:
-      "Manufacturing precise components with focus on accuracy and quality",
-    role: "Manufacturing Engineer, Graphic Designer, and Resource Manager",
+      "Manufacturing precise components while supporting design and resources",
+    role: "Manufacturing Engineer, Graphic Designer and Resource Manager",
     image: "/images/Team/rivaan.jpeg",
   },
   {
     name: "Aarya Goyal",
-    skill:
-      "Clear and professional communication within the team and externally",
+    skill: "Creating visuals and managing shared resources efficiently",
     role: "Graphic Designer and Resource Manager",
     image: "/images/Team/aarya.jpeg",
   },
   {
     name: "Rishaan Dhingra",
-    skill: "Managing sponsor communication and resource coordination",
+    skill: "Managing sponsors and sharing team resources",
     role: "Sponsorship Manager and Resource Manager",
     image: "/images/Team/rishaan.jpeg",
   },
   {
     name: "Samar Pratap Choudhary",
-    skill: "Developing consistent visual branding and design layouts",
-    role: "Graphic Designer",
+    skill: "Designing graphics and managing consistent social media presence",
+    role: "Graphic Designer and Social Media Manager",
     image: "/images/Team/samar.jpeg",
   },
   {
     name: "Niara Bahl",
-    skill: "Optimizing CAD models for performance and efficiency",
-    role: "Design Engineer",
+    skill:
+      "Designing optimized components using CAD and engineering principles",
+    role: "Design Engineer, Sponsorship Manager and Social Media Manager",
     image: "/images/Team/niara.jpeg",
   },
 ];
