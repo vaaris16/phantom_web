@@ -1,15 +1,20 @@
 use std::env;
 
-use axum::{Json, Router, extract::State, response::IntoResponseParts, routing::post};
+use axum::{Json, Router, extract::State, routing::post};
 use serde::{Deserialize, Serialize};
 
+mod emails;
 mod utility;
 mod validate;
 
 use sqlx::PgPool;
+use tower_http::cors::{Any, CorsLayer};
 use validate::{validate_email::validate_email, validate_name::validate_name};
 
-use crate::utility::errors::AppErrors;
+use crate::{
+    emails::{emails_templates::on_sub::EmailTemplate, send_emails::send_email},
+    utility::errors::AppErrors,
+};
 
 #[derive(Deserialize)]
 struct Input {
@@ -43,7 +48,12 @@ async fn main() {
         .await
         .expect("Failed to run migrations");
 
-    let app = create(pool);
+    let app = create(pool).layer(
+        CorsLayer::new()
+            .allow_origin(Any)
+            .allow_methods(Any)
+            .allow_headers(Any),
+    );
     let listener = tokio::net::TcpListener::bind("0.0.0.0:8000").await.unwrap();
 
     axum::serve(listener, app).await.unwrap();
@@ -68,7 +78,26 @@ async fn create_subscriber(
         .bind(&name)
         .execute(&pool)
         .await
-        .map_err(|_| AppErrors::ServerError)?;
+        .map_err(|e| {
+            if let sqlx::Error::Database(db_err) = &e {
+                eprintln!("Constraint: {:?}", db_err.constraint());
+                if db_err.constraint() == Some("subscribers_email_key") {
+                    return AppErrors::EmailAlreadyExists;
+                }
+            }
+            AppErrors::ServerError
+        })?;
+
+    let smtp_email = env::var("SMTP_EMAIL").expect("could not load smtp email");
+    let email_content = EmailTemplate::welcome(&name);
+
+    send_email(
+        &email,
+        &smtp_email,
+        &email_content.body,
+        &email_content.subject,
+    )
+    .await?;
 
     Ok(Json(ValidateInput { email, name }))
 }

@@ -13,6 +13,7 @@ pub enum AppErrors {
     InvalidName,
 
     ServerError,
+    EmailAlreadyExists,
 }
 
 #[derive(Serialize)]
@@ -28,6 +29,7 @@ impl IntoResponse for AppErrors {
             AppErrors::InvalidEmail => (StatusCode::BAD_REQUEST, "Email is not valid"),
             AppErrors::InvalidName => (StatusCode::BAD_REQUEST, "Name is not valid"),
             AppErrors::ServerError => (StatusCode::INTERNAL_SERVER_ERROR, "Server error"),
+            AppErrors::EmailAlreadyExists => (StatusCode::CONFLICT, "Email already exists"),
         };
 
         let body = Json(ErrorResponse {
