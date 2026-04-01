@@ -6,6 +6,7 @@ import Team from "./components/pages/Team/Team";
 import Sponsors from "./components/pages/Sponsors/Sponsors";
 import Scroll from "./components/Scroll";
 import CursorEffect from "./components/Cursor";
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/team" element={<Team />}></Route>
         <Route path="/sponsors" element={<Sponsors />}></Route>
       </Routes>
+      <Analytics />
     </>
   );
 }
