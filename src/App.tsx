@@ -6,9 +6,12 @@ import Team from "./components/pages/Team/Team";
 import Sponsors from "./components/pages/Sponsors/Sponsors";
 import Community from "./components/pages/Community/Community";
 
+import { Analytics } from "@vercel/analytics/react";
+
 function App() {
   return (
     <>
+      <Analytics></Analytics>
       <NavBar></NavBar>
       <Routes>
         <Route path="/" element={<Home />}></Route>

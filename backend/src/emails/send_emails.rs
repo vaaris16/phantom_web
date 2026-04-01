@@ -3,11 +3,14 @@ use lettre::{
     AsyncSmtpTransport, AsyncTransport, Message, Tokio1Executor,
     transport::smtp::authentication::Credentials,
 };
-use std::env;
 
-pub async fn send_email(to: &str, from: &str, body: &str, subject: &str) -> Result<(), AppErrors> {
-    let smpt_pass = env::var("SMTP_PASSWORD").expect("Could not load SMTP password");
-
+pub async fn send_email(
+    smtp_pass: &str,
+    to: &str,
+    from: &str,
+    body: &str,
+    subject: &str,
+) -> Result<(), AppErrors> {
     let email = Message::builder()
         .subject(subject)
         .from(from.parse().unwrap())
@@ -15,7 +18,7 @@ pub async fn send_email(to: &str, from: &str, body: &str, subject: &str) -> Resu
         .body(body.to_string())
         .unwrap();
 
-    let cred = Credentials::new(from.to_string(), smpt_pass);
+    let cred = Credentials::new(from.to_string(), smtp_pass.to_string());
 
     let mailer = AsyncSmtpTransport::<Tokio1Executor>::relay("smtp.gmail.com")
         .unwrap()
@@ -25,7 +28,7 @@ pub async fn send_email(to: &str, from: &str, body: &str, subject: &str) -> Resu
     mailer
         .send(email)
         .await
-        .map_err(|e| AppErrors::ServerError)?;
+        .map_err(|_| AppErrors::ServerError)?;
 
     Ok(())
 }

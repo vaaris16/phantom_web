@@ -89,9 +89,11 @@ async fn create_subscriber(
         })?;
 
     let smtp_email = env::var("SMTP_EMAIL").expect("could not load smtp email");
+    let smtp_pass = env::var("SMTP_PASSWORD").expect("could not load smtp password");
     let email_content = EmailTemplate::welcome(&name);
 
     send_email(
+        &smtp_pass,
         &email,
         &smtp_email,
         &email_content.body,
