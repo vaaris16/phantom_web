@@ -5,13 +5,13 @@ export default async function sub(email, name) {
     body: JSON.stringify({ email, name }),
   });
 
+  const data = await res
+    .json()
+    .catch(() => ({ error: "something went wrong" }));
+
   if (!res.ok) {
-    const data = await res
-      .json()
-      .catch(() => ({ error: "something went wrong" }));
-    return { success: false, error: data.error };
+    return { success: false, field: data.field, error: data.error };
   }
 
-  const data = await res.json();
   return { success: true, data };
 }

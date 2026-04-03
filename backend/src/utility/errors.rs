@@ -18,22 +18,28 @@ pub enum AppErrors {
 
 #[derive(Serialize)]
 struct ErrorResponse {
+    field: &'static str,
     error: String,
 }
 
 impl IntoResponse for AppErrors {
     fn into_response(self) -> Response {
-        let (status, message) = match self {
-            AppErrors::EmptyEmail => (StatusCode::BAD_REQUEST, "Email is empty"),
-            AppErrors::EmptyName => (StatusCode::BAD_REQUEST, "Name is empty"),
-            AppErrors::InvalidEmail => (StatusCode::BAD_REQUEST, "Email is not valid"),
-            AppErrors::InvalidName => (StatusCode::BAD_REQUEST, "Name is not valid"),
-            AppErrors::ServerError => (StatusCode::INTERNAL_SERVER_ERROR, "Server error"),
-            AppErrors::EmailAlreadyExists => (StatusCode::CONFLICT, "Email already exists"),
+        let (status, field, message) = match self {
+            AppErrors::EmptyEmail => (StatusCode::BAD_REQUEST, "email", "Email is empty"),
+            AppErrors::InvalidEmail => (StatusCode::BAD_REQUEST, "email", "Email is not valid"),
+            AppErrors::EmailAlreadyExists => {
+                (StatusCode::CONFLICT, "email", "Email already exists")
+            }
+
+            AppErrors::EmptyName => (StatusCode::BAD_REQUEST, "name", "Name is empty"),
+            AppErrors::InvalidName => (StatusCode::BAD_REQUEST, "name", "Name is not valid"),
+
+            AppErrors::ServerError => (StatusCode::INTERNAL_SERVER_ERROR, "form", "Server error"),
         };
 
         let body = Json(ErrorResponse {
             error: message.to_string(),
+            field: field,
         });
 
         (status, body).into_response()

@@ -12,4 +12,11 @@ impl EmailTemplate {
             ),
         }
     }
+
+    pub fn newsletter(name: &str) -> Self {
+        Self {
+            subject: "Week 1",
+            body: format!("Hey {name}, \n\nTesting........."),
+        }
+    }
 }

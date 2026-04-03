@@ -12,8 +12,14 @@ type Subscriber = {
 };
 
 export default function Subscribe() {
+  type Errors = {
+    email?: string;
+    name?: string;
+    [key: string]: string | undefined;
+  };
+
+  const [errors, setErrors] = useState<Errors>({});
   const [value, setValue] = useState<Subscriber>({ email: "", name: "" });
-  const [error, setError] = useState(null);
   const [success, setSuccess] = useState(false);
   const [loader, setLoader] = useState(false);
 
@@ -23,7 +29,9 @@ export default function Subscribe() {
     setLoader(false);
 
     if (!result.success) {
-      setError(result.error);
+      setErrors({
+        [result.field]: result.error,
+      });
     } else {
       setSuccess(true);
     }
@@ -69,15 +77,16 @@ export default function Subscribe() {
                   id={id}
                   className="w-65 md:w-100 h-12 ml-8 rounded-xl border-white border-[0.5px] px-5 bg-(--text-field) transition-all duration-500 focus:outline-none focus:border-purple-500"
                   placeholder={placeholder}
+                  value={value[id as keyof Subscriber]}
                   type={type}
                   onChange={(e) =>
                     setValue((prev) => ({ ...prev, [id]: e.target.value }))
                   }
                 />
 
-                {error && (
+                {errors[id] && (
                   <p className="text-red-600 font-Montserrat text-sm font-thin ml-8 mt-1">
-                    {error}
+                    {errors[id]}
                   </p>
                 )}
               </div>

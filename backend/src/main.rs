@@ -8,11 +8,16 @@ mod utility;
 mod validate;
 
 use sqlx::PgPool;
+use tokio_cron_scheduler::{Job, JobScheduler};
 use tower_http::cors::{Any, CorsLayer};
 use validate::{validate_email::validate_email, validate_name::validate_name};
 
 use crate::{
-    emails::{emails_templates::on_sub::EmailTemplate, send_emails::send_email},
+    emails::{
+        emails_templates::{self, on_sub::EmailTemplate},
+        send_emails::send_email,
+        send_newsletter_emails::send_newsletter_emails,
+    },
     utility::errors::AppErrors,
 };
 
@@ -48,12 +53,22 @@ async fn main() {
         .await
         .expect("Failed to run migrations");
 
+    let smtp_email = env::var("SMTP_EMAIL").expect("could not load smtp email");
+    let smtp_pass = env::var("SMTP_PASSWORD").expect("could not load smtp password");
+
+    tokio::spawn(start_newsletter_scheduler(
+        pool.clone(),
+        smtp_pass,
+        smtp_email,
+    ));
+
     let app = create(pool).layer(
         CorsLayer::new()
             .allow_origin(Any)
             .allow_methods(Any)
             .allow_headers(Any),
     );
+
     let listener = tokio::net::TcpListener::bind("0.0.0.0:8000").await.unwrap();
 
     axum::serve(listener, app).await.unwrap();
@@ -100,6 +115,26 @@ async fn create_subscriber(
         &email_content.subject,
     )
     .await?;
-
     Ok(Json(ValidateInput { email, name }))
+}
+
+async fn start_newsletter_scheduler(pool: PgPool, smtp_pass: String, smtp_email: String) {
+    let schedular = JobScheduler::new().await.unwrap();
+
+    let job = Job::new_async("0 0 9 * * 0", move |_uuid, _lock: JobScheduler| {
+        let pool = pool.clone();
+        let smtp_email = smtp_email.clone();
+        let smtp_pass = smtp_pass.clone();
+        Box::pin(async move {
+            send_newsletter_emails(smtp_email, &smtp_pass, &pool).await;
+        })
+    })
+    .unwrap();
+
+    schedular.add(job).await.unwrap();
+    schedular.start().await.unwrap();
+
+    loop {
+        tokio::time::sleep(tokio::time::Duration::from_secs(60)).await;
+    }
 }
