@@ -2,10 +2,10 @@ export default function STEMInfo() {
   return (
     <section className="pt-20 flex flex-col justify-center items-center animate-fade-in-y">
       <div className="relative">
-        <h1 className="absolute ml-4 md:ml-0 text-7xl text-white font-Montserrat font-bold uppercase">
+        <h1 className="absolute ml-4 md:ml-0 text-7xl font-Montserrat font-bold uppercase">
           what is stem racing
         </h1>
-        <h1 className="relative ml-4 text-7xl text-phantom blur-3xl opacity-100 text-white font-Montserrat font-bold uppercase">
+        <h1 className="relative ml-4 text-7xl text-phantom blur-3xl opacity-100 font-Montserrat font-bold uppercase">
           what is stem racing
         </h1>
       </div>

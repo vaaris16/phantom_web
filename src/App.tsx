@@ -7,7 +7,6 @@ import STEMRacing from "./components/pages/STEM_Racing/STEMRacing";
 import Team from "./components/pages/Team/Team";
 import Sponsors from "./components/pages/Sponsors/Sponsors";
 import Scroll from "./components/Scroll";
-import About from "./components/pages/About/About";
 import CursorEffect from "./components/Cursor";
 
 function App() {
@@ -21,7 +20,6 @@ function App() {
         <Route path="/stem_racing" element={<STEMRacing />}></Route>
         <Route path="/team" element={<Team />}></Route>
         <Route path="/sponsors" element={<Sponsors />}></Route>
-        <Route path="/about" element={<About />}></Route>
       </Routes>
 
       <Analytics />

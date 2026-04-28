@@ -27,7 +27,7 @@ export default function SocialMedia() {
                 className="absolute rounded-4xl inset-0 w-full h-full object-cover"
                 loading="lazy"
               />
-              <h1 className="z-10 text-white text-lg font-bold font-Montserrat m-5">
+              <h1 className="z-10  text-lg font-bold font-Montserrat m-5">
                 {label}
               </h1>
             </div>

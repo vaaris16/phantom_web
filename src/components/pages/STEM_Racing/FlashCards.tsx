@@ -9,10 +9,10 @@ export default function FlashCards() {
           <div className="relative w-75 h-100 md:w-125 md:h-50 flex flex-col gap-5 bg-[#0d0d0d] rounded-4xl transition-all duration-500 group-hover:-translate-y-3">
             <Icon size={64} className="mt-6 mx-4 text-(--accents)" />
             <div className="mx-6 md:mt-0 mt-6 flex flex-col gap-2">
-              <h1 className="font-Montserrat font-bold md:text-base text-4xl text-white">
+              <h1 className="font-Montserrat font-bold md:text-base text-4xl">
                 {title}
               </h1>
-              <p className="font-Montserrat md:mt-0 mt-6 font-thin text-white/70 text-sm">
+              <p className="font-Montserrat md:mt-0 mt-6 font-thin/70 text-sm">
                 {content}
               </p>
             </div>

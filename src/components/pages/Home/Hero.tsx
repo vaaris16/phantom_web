@@ -33,7 +33,7 @@ export default function Hero() {
 
         <button
           onClick={() => navigate("/team")}
-          className="w-40 h-14 md:w-48 md:h-16 hover:scale-105 transition-transform duration-300 bg-black border-x border-y text-lg text-white font-Montserrat font-medium rounded-full"
+          className="w-40 h-14 md:w-48 md:h-16 hover:scale-105 transition-transform duration-300 bg-black border-x border-y text-lg  font-Montserrat font-medium rounded-full"
         >
           Learn More
         </button>

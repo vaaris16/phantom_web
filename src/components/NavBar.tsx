@@ -16,7 +16,7 @@ export default function NavBar() {
           {NavLinks.map(({ label, href }) => (
             <li key={label}>
               <Link
-                className={`font-Montserrat font-thin transition-colors duration-400 hover:text-white ${location.pathname === href ? "text-white" : "text-[#9ba1ae]"}`}
+                className={`font-Montserrat font-thin transition-colors duration-400 hover: ${location.pathname === href ? "" : "text-[#9ba1ae]"}`}
                 to={href}
               >
                 {label}
@@ -38,7 +38,7 @@ export default function NavBar() {
                   {NavLinks.map(({ label, href }) => (
                     <li key={label}>
                       <Link
-                        className={`font-Montserrat font-thin transition-colors duration-400 hover:text-white ${location.pathname === href ? "text-white" : "text-[#9ba1ae]"}`}
+                        className={`font-Montserrat font-thin transition-colors duration-400 hover: ${location.pathname === href ? "" : "text-[#9ba1ae]"}`}
                         to={href}
                         onClick={() => setOpen(false)}
                       >

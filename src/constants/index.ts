@@ -3,7 +3,6 @@ import { Book, ChartArea, Factory, Component } from "lucide-react";
 export const NavLinks = [
   { label: "Home", href: "/" },
   { label: "STEM Racing", href: "/stem_racing" },
-  { label: "About", href: "/about" },
   { label: "Team", href: "/team" },
   { label: "Sponsors", href: "/sponsors" },
 ];
